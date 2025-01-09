@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andromeda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      perspective: 1px; 
+      overflow-x: hidden; 
+      overflow-y: auto;  
+    }
+
+    .parallax-container {
+      background-image: url("garden-background.jpg"); 
+      background-attachment: fixed; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+      transform-style: preserve-3d; 
+      height: 100vh;
+      width: 100vw; 
+    }
+
+    .parallax-content {
+      position: relative;
+      z-index: 2; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+      padding: 40px; 
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      max-width: 800px;
+      padding: 40px;
+      width: 90%; 
+      transform: translateZ(0); 
+    }
+
+    .logo {
+      width: 200px; 
+      height: auto;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease; 
+    }
+
+    .logo:hover {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      color: #333; 
+      font-size: 2.8em;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #333;
+      font-size: 1.8em;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #555;
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    a {
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease; 
+    }
+
+    a:hover {
+      color: #367c39; 
+    }
+
+    .gallery-container {
+      background-color: #f7f7f7;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; 
+    }
+
+    .gallery img {
+      width: 300px; 
+      height: auto;
+      margin: 10px;
+      border-radius: 5px; 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease; 
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parallax-container">
+    <div class="parallax-content">
+      <div class="container">
+        <img class="logo" src="logo1.jpg" alt="Andromeda Logo"> 
+
+        <h1>Andromeda Ogrody</h1> 
+
+        <p>Profesjonalne usługi ogrodnicze w Twojej okolicy.</p> 
+        <p></p>
+
+        <h2>Nasze Usługi</h2>
+        <p>- Projektowanie terenów zieleni</p>
+        <p>- Realizacja projektu</p>
+        <p>- Kompleksowa pielęgnacja</p>
+        <p>- Usługi minikoparką (kostki, tarasy, odwodnienia)</p>
+        <p>- Systemy nawadniające i automatyczne systemy nawadniające</p> 
+        <p>A także wiele innych działań związanych z działką i ogrodem</p>
+        <h2>Kontakt</h2>
+        <p><strong>Email:</strong> andromedaogrody@gmail.com</p> 
+        <p><strong>Telefon:</strong> 724-840-560</p> 
+        <p><strong>Adres:</strong> Końskie, ul. Leśna 29</p> 
+
+        <p>Znajdź nas na <a href="https://www.facebook.com/people/Andromeda-Ogrody/100057285827887/">Facebooku</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery-container">
+    <h2>Nasze Realizacje</h2>
+    <div class="gallery">
+      <img src="photo1.jpg" alt="Projekt 1">
+      <img src="photo2.jpg" alt="Projekt 2">
+      <img src="photo3.jpg" alt="Projekt 3">
+      <img src="photo4.jpg" alt="Projekt 4">
+      <img src="photo5.jpg" alt="Projekt 5">
+    </div>
+  </div>
+
+</body>
+</html>
